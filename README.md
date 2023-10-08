@@ -13,3 +13,5 @@
     
     5. install laravel breeze
 
+    6. Seed RolePermissionSeeder and SuperAdminSeeder
+
