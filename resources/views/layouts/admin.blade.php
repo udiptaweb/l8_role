@@ -36,6 +36,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <link rel="stylesheet" href="/admin/plugins/toastr/toastr.min.css">
+
     @yield('top')
 </head>
 
@@ -247,8 +249,10 @@
     <script src="/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
     <script src="/admin/dist/js/adminlte.js"></script>
+
+    <script src="/admin/plugins/toastr/toastr.min.js"></script>
+
     @yield('bottom')
 </body>
 
 </html>
-
