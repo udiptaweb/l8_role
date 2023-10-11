@@ -1,5 +1,5 @@
 <p>
-    Laravel 8 Starter with adminlte setup and Roles Permissions CRUD
+    Laravel 8 Starter with adminlte and Roles Permissions setup
 </p>
 <h5>Steps</h5>
 
