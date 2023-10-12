@@ -13,5 +13,9 @@
     
     5. install laravel breeze
 
-    6. Seed RolePermissionSeeder and SuperAdminSeeder
+    6. install laravel-permission package by spatie
+
+    7. Seed RolePermissionSeeder and SuperAdminSeeder
+
+
 
