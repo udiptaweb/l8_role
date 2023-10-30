@@ -38,8 +38,14 @@ class RolePermissionsAddForm extends Component
     }
     public function render()
     {
+        $role = Role::find($this->role_id);
+        $permissions_added = [];
+        if ($role) {
+            $permissions_added = $role->permissions->pluck('name')->toArray();
+        }
         return view('livewire.admin.role-permission.role-permissions-add-form', [
-            'permissions' => Permission::all()
+            'permissions' => Permission::all(),
+            'permissions_added' => $permissions_added
         ]);
     }
 }

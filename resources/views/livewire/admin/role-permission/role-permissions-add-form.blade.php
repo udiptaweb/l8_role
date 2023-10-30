@@ -4,7 +4,9 @@
         <select wire:model="permission_id" id="" class="form-select form-control">
             <option value="">--Select Permission--</option>
             @foreach ($permissions as $permission)
-                <option value="{{ $permission->id }}">{{ $permission->name }}</option>
+                @if (!in_array($permission->name, $permissions_added))
+                    <option value="{{ $permission->id }}">{{ $permission->name }}</option>
+                @endif
             @endforeach
         </select>
         @error('permission_id')
@@ -14,7 +16,7 @@
     <div>
         <button type="button" wire:click="store" wire:loading.remove class="btn btn-md btn-primary">SUBMIT</button>
         <span wire:loading>
-            <x-spinner ></x-spinner>
+            <x-spinner></x-spinner>
         </span>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
     </div>

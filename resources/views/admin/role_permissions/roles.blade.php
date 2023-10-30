@@ -37,7 +37,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header py-2 bg-primary text-white">
                                             <h5 class="modal-title" id="exampleModalLabel">Add New Permission</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             @livewire('admin.role-permission.role-permissions-add-form')
